@@ -13,7 +13,7 @@ public class Keyword {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "keyword_value", nullable = false, unique = true, length = 50)
+    @Column(nullable = false, unique = true, length = 50)
     private String value;
 
     @ManyToMany(mappedBy = "keywords")
@@ -59,3 +59,4 @@ public class Keyword {
         return Objects.hash(value);
     }
 }
+
