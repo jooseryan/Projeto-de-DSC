@@ -33,7 +33,7 @@ public class BibliographicSource {
     )
     private List<Author> authors;
 
-    @Column(name = "publication_year", nullable = false)
+    @Column(nullable = false)
     @NotNull(message = "O ano não pode ser vazio")
     private int year;
 
@@ -209,3 +209,4 @@ public class BibliographicSource {
         this.abstractText = abstractText;
     }
 }
+
